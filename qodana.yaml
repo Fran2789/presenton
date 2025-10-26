@@ -2,7 +2,7 @@
 # WARNING: Do not store sensitive information in this file, as its contents will be included in the Qodana report. #
 ####################################################################################################################
 
-bootstrap: apt install sudo -y && sudo apt install python3-fastapi python3-requests python3-sqlalchemy python3-select python3-starlette python3-fastmcp python3-uvicorn -y
+bootstrap: pip install fastapi requests sqlalchemy starlette fastmcp uvicorn 
 
 version: "1.0"
 linter: jetbrains/qodana-python:2025.2
